@@ -8,11 +8,11 @@
   <% @authors.each do |author| %>
     <%= render author %>
     <p>
-      <%= link_to "Show this author", author %>
+      <%= link_to "Montrer l'auteur", author, class: "btn btn-primary"  %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New author", new_author_path %>
+<%= link_to "Nouvel auteur", new_author_path, class: "btn btn-info text-white" %>
 <hr>
-<%= link_to "View Recipes", recipes_path %>
+<%= link_to "Voir les recettes", recipes_path, class: "btn btn-secondary"  %>

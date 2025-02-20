@@ -1,22 +1,24 @@
 <div class="container">
 <p style="color: green"><%= notice %></p>
 
-<% content_for :title, "Recipes" %>
+<% content_for :title, "Recettes" %>
 
-<h1 class="titre">Recipes</h1>
+<h1 class="titre">Recettes</h1>
 
 <div class="row">
   <% @recipes.each do |recipe| %>
   <div class="col-lg-3">
     <%= image_tag recipe.image, size:"300x370"  %>
     <br>
-    <%= recipe.title %>
+    <br>
+    <b><%= recipe.title %></b> <br>
+    Temps de préparation :<%= recipe.preparation_time %><br> <br>
     <p>
-      <%= link_to "Show this recipe", recipe, class: "btn btn-primary"  %>
+      <%= link_to "Montrer cette recette", recipe, class: "btn btn-secondary btn-sm"  %>
     </p>
   </div>
   <% end %>
 </div>
 
-<%= link_to "New recipe", new_recipe_path, class: "btn btn-secondary" %>
+<%= link_to "Création nouvelle recette", new_recipe_path, class: "btn btn-success" %>
 </div>

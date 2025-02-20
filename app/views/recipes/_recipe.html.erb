@@ -1,12 +1,12 @@
 <div id="<%= dom_id recipe %>">
 
   <h1>
-    <%= recipe.title %>
+    <%= recipe.title%>
   </h1>
 
 
   <p>
-    <strong>Author:</strong>
+    <strong>Auteur:</strong>
     <%= link_to recipe.author %>
   </p>
 
@@ -16,22 +16,21 @@
   </p>
 
   <p>
-    <strong>Image:</strong> <br>
     <%= image_tag recipe.image, size:"300x400" %>
   </p>
 
   <p>
-    <strong>Portions:</strong>
+    <strong>Quantités:</strong>
     <%= recipe.portions %>
   </p>
 
   <p>
-    <strong>Preparation time:</strong>
+    <strong>Temps de préparation:</strong>
     <%= recipe.preparation_time %>
   </p>
 
   <p>
-    <strong>Cook timer:</strong>
+    <strong>Temps de cuisson:</strong>
     <%= recipe.cook_timer %>
   </p>
 

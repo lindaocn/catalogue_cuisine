@@ -4,15 +4,15 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.association :author %>
-    <%= f.input :title %>
-    <%= f.input :date %>
-    <%= f.input :image %>
-    <%= f.input :portions %>
-    <%= f.input :preparation_time %>
-    <%= f.input :cook_timer %>
-    <%= f.input :ingredients %>
-    <%= f.input :instruction %>
+    <%= f.association :author, label: "Auteur" %>
+    <%= f.input :title, label: "Titre" %>
+    <%= f.input :date, label: "Date" %>
+    <%= f.input :image, label: "Image" %>
+    <%= f.input :portions, label: "Portions" %>
+    <%= f.input :preparation_time, label: "Temps de préparation" %>
+    <%= f.input :cook_timer, label: "Temps de cuisson" %>
+    <%= f.input :ingredients, label: "Ingrédients" %>
+    <%= f.input :instruction, label: "Instructions" %>
   </div>
 
   <div class="form-actions">
