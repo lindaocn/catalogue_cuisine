@@ -8,3 +8,22 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+ .titre {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+}
+.carte {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.recipe {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 50px;
+}

@@ -1,12 +1,13 @@
 <div id="<%= dom_id recipe %>">
-  <p>
-    <strong>Author:</strong>
-    <%= recipe.author_id %>
-  </p>
+
+  <h1>
+    <%= recipe.title %>
+  </h1>
+
 
   <p>
-    <strong>Title:</strong>
-    <%= recipe.title %>
+    <strong>Author:</strong>
+    <%= recipe.author %>
   </p>
 
   <p>
@@ -15,8 +16,8 @@
   </p>
 
   <p>
-    <strong>Image:</strong>
-    <%= recipe.image %>
+    <strong>Image:</strong> <br>
+    <%= image_tag recipe.image, size:"300x370"%>
   </p>
 
   <p>
@@ -34,10 +35,12 @@
     <%= recipe.cook_timer %>
   </p>
 
-  <p>
-    <strong>Ingredients:</strong>
-    <%= recipe.ingredients %>
-  </p>
+<h2>Ingredients</h2>
+<ul>
+  <% @recipe.ingredients.split("\n").each do |ingredient| %>
+    <li><%= ingredient.strip %></li>
+  <% end %>
+</ul>
 
   <p>
     <strong>Instruction:</strong>
