@@ -1,20 +1,22 @@
+<div class="container">
 <p style="color: green"><%= notice %></p>
 
 <% content_for :title, "Recipes" %>
 
 <h1 class="titre">Recipes</h1>
 
-<div class="carte" id="recipes">
+<div class="row">
   <% @recipes.each do |recipe| %>
-  <div class="recipe">
+  <div class="col-lg-3">
     <%= image_tag recipe.image, size:"300x370"  %>
     <br>
     <%= recipe.title %>
     <p>
-      <%= link_to "Show this recipe", recipe %>
+      <%= link_to "Show this recipe", recipe, class: "btn btn-primary"  %>
     </p>
   </div>
   <% end %>
 </div>
 
-<%= link_to "New recipe", new_recipe_path %>
+<%= link_to "New recipe", new_recipe_path, class: "btn btn-secondary" %>
+</div>
