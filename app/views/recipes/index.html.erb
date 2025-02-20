@@ -2,8 +2,8 @@
 <p style="color: green"><%= notice %></p>
 
 <% content_for :title, "Recettes" %>
-
-<h1 class="titre">Recettes</h1>
+<br>
+<h1 class="titre" style="font-size: 70px;">Recettes</h1> <br>
 
 <div class="row">
   <% @recipes.each do |recipe| %>
@@ -20,5 +20,5 @@
   <% end %>
 </div>
 
-<%= link_to "Création nouvelle recette", new_recipe_path, class: "btn btn-success" %>
+<%= link_to "Création nouvelle recette", new_recipe_path, class: "btn btn-success" %> <br> <br> <br>
 </div>
