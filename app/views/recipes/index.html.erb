@@ -3,7 +3,9 @@
 
 <% content_for :title, "Recettes" %>
 <br>
-<h1 class="titre" style="font-size: 70px;">Recettes</h1> <br>
+<h1 class="titre" style="font-size: 70px;">Recettes</h1>
+<hr>
+
 
 <div class="row">
   <% @recipes.each do |recipe| %>
@@ -19,6 +21,8 @@
   </div>
   <% end %>
 </div>
+
+<hr>
 
 <%= link_to "Création nouvelle recette", new_recipe_path, class: "btn btn-success" %> <br> <br> <br>
 </div>
