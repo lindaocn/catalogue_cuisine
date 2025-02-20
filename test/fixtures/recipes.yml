@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  author: one
+  title: MyString
+  date: 2025-02-20
+  image: MyString
+  portions: MyText
+  preparation_time: MyString
+  cook_timer: MyString
+  ingredients: MyText
+  instruction: MyText
+
+two:
+  author: two
+  title: MyString
+  date: 2025-02-20
+  image: MyString
+  portions: MyText
+  preparation_time: MyString
+  cook_timer: MyString
+  ingredients: MyText
+  instruction: MyText
