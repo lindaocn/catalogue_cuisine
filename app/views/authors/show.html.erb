@@ -3,6 +3,17 @@
 <%= render @author %>
 
 <div>
+
+  <h2>Ses recettes crées</h2>
+
+  <%@author.recipes.each do |recipe| %>
+<ul>
+  <li><%= link_to recipe %></li>
+</ul>
+
+  <% end %>
+
+
   <%= link_to "Editer cet auteur", edit_author_path(@author),  class: "btn btn-primary" %>
   <%= link_to "Retour aux auteurs", authors_path,  class: "btn btn-secondary" %>
 
