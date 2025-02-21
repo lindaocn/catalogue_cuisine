@@ -12,10 +12,18 @@
 </ul>
 
   <% end %>
+<div class=" mb-3">
 
-
+<div class="my-1">
   <%= link_to "Editer cet auteur", edit_author_path(@author),  class: "btn btn-primary" %>
-  <%= link_to "Retour aux auteurs", authors_path,  class: "btn btn-secondary" %>
+</div>
 
+<div class="my-1">
+  <%= link_to "Retour aux auteurs", authors_path,  class: "btn btn-secondary" %>
+</div>
+
+<div class="my-1">
   <%= button_to "Supprimer cet acteur", @author, method: :delete, class: "btn btn-danger" %>
+</div>
+
 </div>
