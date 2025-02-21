@@ -1,12 +1,11 @@
+<hr>
 <div id="<%= dom_id author %>">
-  <p>
-    <strong>Pseudonym:</strong>
+  <h2>
     <%= author.pseudonym %>
-  </p>
+  </h2>
 
   <p>
-    <strong>Image:</strong><br>
-    <%= image_tag author.image, size:"400x300"%>
+    <%= image_tag author.image, size: "300x400", style: "object-fit: cover;" %>
   </p>
 
 </div>
