@@ -4,7 +4,7 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.association :author, label: "Auteur" %>
+    <%= f.association :author, label: "Auteur", include_blank: false %>
     <%= f.input :title, label: "Titre" %>
     <%= f.input :date, label: "Date" %>
     <%= f.input :image, label: "Image" %>
