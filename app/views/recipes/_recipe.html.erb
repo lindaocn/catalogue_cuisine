@@ -4,54 +4,73 @@
   <h1 style="font-size: 50px;"><%= recipe.title %></h1>
   </h1>
 
-
-  <p>
-    <strong>Auteur:</strong>
-    <%= link_to recipe.author%>
-  </p>
-
-  <p>
-    <strong>Date:</strong>
-    <%= recipe.date %>
-  </p>
-
-  <p>
-    <%= image_tag recipe.image, size:"300x400", style: "object-fit: cover;" %>
-  </p>
-
-  <p>
-    <strong>Quantités:</strong>
-    <%= recipe.portions %>
-  </p>
-
-  <p>
-    <strong>Temps de préparation:</strong>
-    <%= recipe.preparation_time %>
-  </p>
-
-  <p>
-    <strong>Temps de cuisson:</strong>
-    <%= recipe.cook_timer %>
-  </p>
-
-<h2>Ingredients</h2>
-<ul>
-  <% @recipe.ingredients.split("\n").each do |ingredient| %>
-    <li><%= ingredient.strip %></li>
-  <% end %>
-</ul>
-
-<h2>Instruction:</h2>
-
-  <ol>
-    <% @recipe.instruction.split("\n").each do |instruction| %>
-      <li><%= instruction.strip %></li>
-  <% end %>
-  </ol>
-
-
-  </p>
   <hr>
+  <br>
 
 
+<div class="row">
+
+<div class="col-xl-6">
+      <p>
+        <strong>Auteur:</strong>
+        <%= link_to recipe.author%>
+      </p>
+
+      <p>
+        <strong>Date:</strong>
+        <%= recipe.date %>
+      </p>
+
+      <p>
+        <%= image_tag recipe.image, size:"300x400", style: "object-fit: cover;" %>
+      </p>
+    <br>
+
+    </div>
+
+    <div class="col-xl-6">
+
+      <p>
+        <strong>Quantités:</strong>
+        <%= recipe.portions %>
+      </p>
+
+      <p>
+        <strong>Temps de préparation:</strong>
+        <%= recipe.preparation_time %>
+      </p>
+
+      <p>
+        <strong>Temps de cuisson:</strong>
+        <%= recipe.cook_timer %>
+      </p>
+
+<br>
+
+    <h2>Ingredients</h2>
+    <ul>
+      <% @recipe.ingredients.split("\n").each do |ingredient| %>
+        <li><%= ingredient.strip %></li>
+      <% end %>
+    </ul>
+    </div>
+
+
+  </div>
+
+    <h2>Instruction:</h2>
+
+      <ol>
+        <% @recipe.instruction.split("\n").each do |instruction| %>
+          <li><%= instruction.strip %></li>
+      <% end %>
+      </ol>
+
+
+      </p>
+      <hr>
+      <br>
+
+
+    </div>
 </div>

@@ -3,15 +3,17 @@
 <h1 class="titre" style="font-size: 70px;">Auteurs</h1>
 
 
-<div id="authors">
+<div class="row">
   <% @authors.each do |author| %>
+    <div class="col-xl-4">
     <%= render author %>
     <p>
       <%= link_to "Montrer l'auteur", author, class: "btn btn-primary"  %>
     </p>
+  </div>
   <% end %>
 </div>
 
-<%= link_to "Nouvel auteur", new_author_path, class: "btn btn-info text-white" %>
 <hr>
+<%= link_to "Nouvel auteur", new_author_path, class: "btn btn-info text-white" %>
 <%= link_to "Voir les recettes", recipes_path, class: "btn btn-secondary"  %>
